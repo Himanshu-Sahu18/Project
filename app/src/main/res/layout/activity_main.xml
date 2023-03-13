@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#0A0DFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#1909E4"
+        android:backgroundTint="#0832CC"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="-1dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="251dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="My Dashboard"
+            android:textColor="#FFFFFF"
+            android:textSize="34dp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addNotice"
+        android:layout_width="141dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#D1EFEA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="0.055">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_green"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_upload_notice" />
+
+        <View
+            android:id="@+id/UploadNoticeview"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="108dp"
+            android:background="#21CAB1"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/UploadNoticeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Upload Notice"
+            android:textColor="#040000"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="141dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#D1EFEA"
+        app:layout_constraintEnd_toEndOf="@+id/addGalleryImage"
+        app:layout_constraintStart_toStartOf="@+id/addGalleryImage"
+        app:layout_constraintTop_toTopOf="@+id/addEbook"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_yellow"
+            android:padding="15dp"
+            app:srcCompat="@drawable/group_of_people_svgrepo_com" />
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="108dp"
+            android:background="#21CAB1" />
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Add Faculty"
+            android:textColor="#040000"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addGalleryImage"
+        android:layout_width="141dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#D1EFEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addNotice"
+        app:layout_constraintTop_toTopOf="@+id/addNotice">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_red"
+            android:padding="20dp"
+            app:srcCompat="@drawable/ic_upload_image" />
+
+        <View
+            android:id="@+id/UploadNotesView"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="108dp"
+            android:background="#21CAB1" />
+
+        <TextView
+            android:id="@+id/UploadNotesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Upload Image"
+            android:textColor="#040000"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addEbook"
+        android:layout_width="141dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#D1EFEA"
+        app:layout_constraintEnd_toEndOf="@+id/addNotice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addNotice"
+        app:layout_constraintTop_toBottomOf="@+id/addNotice">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_blue"
+            android:padding="10dp"
+            app:srcCompat="@drawable/notebook" />
+
+        <View
+            android:id="@+id/UploadEbooksView"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="108dp"
+            android:background="#21CAB1" />
+
+        <TextView
+            android:id="@+id/UploadEbooksTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Upload Ebooks"
+            android:textColor="#040000"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="141dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#D1EFEA"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView3">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_orange"
+            android:padding="15dp"
+            app:srcCompat="@drawable/ic_attendance" />
+
+        <View
+            android:id="@+id/AttendanceView"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="108dp"
+            android:background="#21CAB1" />
+
+        <TextView
+            android:id="@+id/AttendanceTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Attendance"
+            android:textColor="#040000"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="141dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#D1EFEA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/addEbook"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/addEbook"
+        app:layout_constraintTop_toBottomOf="@+id/addEbook"
+        app:layout_constraintVertical_bias="0.78">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_pink"
+            android:padding="15dp"
+            app:srcCompat="@drawable/ic_delete_notice" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="108dp"
+            android:background="#21CAB1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Delete Notice"
+            android:textColor="#040000"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85CCBB"
+    tools:context=".UploadNotice">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:id="@+id/addImage"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FAF0F0"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="106dp">
+
+        <ImageView
+            android:id="@+id/AddImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_blue"
+            android:padding="20dp"
+            app:srcCompat="@drawable/ic_image" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="108dp"
+            android:background="#21CAB1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Upload Notice"
+            android:textColor="#040000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/noticeTitle"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Notice Title" />
+
+            <Button
+                android:id="@+id/uploadNoticeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="Upload Notice"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85CCBB"
+    tools:context=".UploadImage">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:id="@+id/addImage"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FAF0F0"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="106dp">
+
+        <ImageView
+            android:id="@+id/addGalleryImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_yellow"
+            android:padding="20dp"
+            app:srcCompat="@drawable/ic_image" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="108dp"
+            android:background="#21CAB1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Add Image"
+            android:textColor="#040000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_category"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="center"
+            android:layout_marginTop="160dp" />
+
+        <Button
+            android:id="@+id/uploadImageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:layout_weight="1"
+            android:text="Upload Image"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/galleryImageView"/>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

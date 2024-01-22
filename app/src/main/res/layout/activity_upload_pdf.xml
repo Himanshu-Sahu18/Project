@@ -20,7 +20,7 @@
         tools:layout_editor_absoluteY="106dp">
 
         <ImageView
-            android:id="@+id/AddImage"
+            android:id="@+id/addImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
@@ -30,14 +30,14 @@
             app:srcCompat="@drawable/ic_pdf" />
 
         <View
-            android:id="@+id/view2"
+            android:id="@+id/view1"
             android:layout_width="match_parent"
             android:layout_height="3dp"
             android:layout_marginTop="108dp"
             android:background="#21CAB1" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/selectPdf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="110dp"
@@ -47,6 +47,22 @@
             android:textColor="#040000"
             android:textSize="18sp"
             android:textStyle="bold" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="155dp"
+            android:background="#21CAB1" />
+
+        <TextView
+            android:id="@+id/pdfTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No File Selected"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -58,7 +74,7 @@
                 style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="40dp"
                 android:hint="PDF Title" />
 
             <Button
